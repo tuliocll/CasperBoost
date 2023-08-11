@@ -168,6 +168,26 @@
                 "type": "boolean",
                 "default": true,
                 "group": "post"
+            },
+            "linkedin_profile_url": {
+                "type": "text",
+                "default": ""
+            },
+            "github_profile_url": {
+                "type": "text",
+                "default": ""
+            },
+            "youtube_profile_url": {
+                "type": "text",
+                "default": ""
+            },
+            "instagram_profile_url": {
+                "type": "text",
+                "default": ""
+            },
+            "twitter_profile_url": {
+                "type": "text",
+                "default": ""
             }
         }
     },

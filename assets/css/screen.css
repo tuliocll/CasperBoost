@@ -2108,6 +2108,13 @@ iframe.instagram-media + script + :not([id]) {
     border-radius: 100%;
 }
 
+.footer-social-link {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 @media (max-width: 767px) {
     .site-footer .inner {
         max-width: 500px;
@@ -2122,6 +2129,10 @@ iframe.instagram-media + script + :not([id]) {
     }
     .site-footer .copyright {
         margin-bottom: 16px;
+    }
+    .footer-social-link {
+        justify-content: center;
+        margin-top: 1rem;
     }
 }
 
