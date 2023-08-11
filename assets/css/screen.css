@@ -907,6 +907,30 @@ production stylesheet in assets/built/screen.css
     height: 100%;
     background: var(--color-lightgrey) no-repeat center center;
     object-fit: cover;
+    background-image: linear-gradient(
+        to right,
+        #f6f7f8 0%,
+        #edeef1 20%,
+        #f6f7f8 40%,
+        #f6f7f8 100%
+    );
+    background-repeat: no-repeat;
+
+    animation-name: placeholderShimmer;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes placeholderShimmer {
+    0% {
+      background-position: -468px 0;
+    }
+  
+    100% {
+      background-position: 468px 0;
+    }
 }
 
 .post-card.keep-ratio:not(.post-card-large):not(.post-card-full) .post-card-image {
