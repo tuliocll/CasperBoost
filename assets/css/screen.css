@@ -2185,7 +2185,14 @@ html.dark-mode .site-header-content {
 }
 
 html.dark-mode .post-card-image {
-    background: var(--color-darkmode);
+    background: #7d7d7d;
+    background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+    );
 }
 
 html.dark-mode :is(.post-card-tags, .post-card-meta, .article-tag a, .byline-meta-content, .pagination .page-number) {
