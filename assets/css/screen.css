@@ -876,7 +876,8 @@ production stylesheet in assets/built/screen.css
     position: relative;
     overflow: hidden;
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
+    border-radius: 26px;
 }
 
 .post-card-image-link::after {
@@ -907,6 +908,8 @@ production stylesheet in assets/built/screen.css
     height: 100%;
     background: var(--color-lightgrey) no-repeat center center;
     object-fit: cover;
+    border-radius: 26px;
+
     background-image: linear-gradient(
         to right,
         #f6f7f8 0%,
