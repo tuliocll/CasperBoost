@@ -886,11 +886,6 @@ production stylesheet in assets/built/screen.css
     padding-bottom: 55%;
 }
 
-.post-card[class*="post-access-"] .post-card-image-link::after {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
-}
-
 .post-card.keep-ratio[class*="post-access-"] .post-card-image-link::after {
     position: absolute;
     inset: 0;
@@ -949,15 +944,17 @@ production stylesheet in assets/built/screen.css
 
 .post-card-access {
     position: absolute;
-    inset: 0;
     z-index: 10;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 4px;
     font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
+    padding: 0px 20px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--ghost-accent-color);
 }
 
 .post-card-content-link {
