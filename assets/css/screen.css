@@ -2194,7 +2194,6 @@ iframe.instagram-media + script + :not([id]) {
     border-radius: 100%;
 }
 
-<<<<<<< HEAD
 #snackbar {
     visibility: hidden;
     min-width: 250px;
@@ -2258,13 +2257,13 @@ iframe.instagram-media + script + :not([id]) {
         bottom: 0;
         opacity: 0;
     }
-=======
+}
+
 .footer-social-link {
     display: flex;
     gap: 20px;
     margin: 0 auto;
     max-width: 1200px;
->>>>>>> 9096380d1d229ee9cdefdc6be5d786aa9b2e540f
 }
 
 @media (max-width: 767px) {
