@@ -40,10 +40,11 @@ which templates loop over to generate a list of posts. --}}
         <a class="post-card-content-link" href="{{url}}">
             <header class="post-card-header">
                 <div class="post-card-tags">
-                    {{#has index="0"}}
-                    {{else}}
+                    {{^has index="0"}}
                         {{#foreach tags}}
-                            <a href="{{url}}" title="{{name}}" class="post-card-tag">{{name}}</a>
+                            {{#match @index "<" 4}}
+                                <a href="{{url}}" title="{{name}}" class="post-card-tag">{{name}}</a>
+                            {{/match}}
                         {{/foreach}}
                     {{/has}}
                     {{#if featured}}
