@@ -13,6 +13,11 @@
     <link rel="preload" as="style" href="{{asset "built/screen.css"}}" />
     <link rel="preload" as="script" href="{{asset "built/casper.js"}}" />
 
+    {{!-- Highlightjs --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
     {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
     this will take care of caching and cache-busting automatically --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
@@ -85,6 +90,23 @@
                 {{navigation type="secondary"}}
             </nav>
             <div class="gh-powered-by"><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+        </div>
+        <div class="footer-social-link">
+            {{#if @custom.linkedin_profile_url}}
+                <a class="author-profile-social-link" href="{{@custom.linkedin_profile_url}}" target="_blank" rel="noopener">{{> "icons/linkedin"}}</a>
+            {{/if}}
+            {{#if @custom.instagram_profile_url}}
+                <a class="author-profile-social-link" href="{{@custom.instagram_profile_url}}" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+            {{/if}}
+            {{#if @custom.github_profile_url}}
+                <a class="author-profile-social-link" href="{{@custom.github_profile_url}}" target="_blank" rel="noopener">{{> "icons/github"}}</a>
+            {{/if}}
+            {{#if @custom.youtube_profile_url}}
+                <a class="author-profile-social-link" href="{{@custom.youtube_profile_url}}" target="_blank" rel="noopener">{{> "icons/youtube"}}</a>
+            {{/if}}
+            {{#if @custom.twitter_profile_url}}
+                <a class="author-profile-social-link" href="{{@custom.twitter_profile_url}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+            {{/if}}
         </div>
     </footer>
 
