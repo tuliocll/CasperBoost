@@ -909,6 +909,8 @@ production stylesheet in assets/built/screen.css
     background: var(--color-lightgrey) no-repeat center center;
     object-fit: cover;
     border-radius: 26px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
 
     background-image: linear-gradient(
         to right,
@@ -924,6 +926,11 @@ production stylesheet in assets/built/screen.css
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.post-card-image:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 @keyframes placeholderShimmer {
