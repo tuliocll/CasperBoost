@@ -51,16 +51,18 @@ which templates loop over to generate a list of posts. --}}
                         <span class="post-card-featured">{{> "icons/fire"}} Featured</span>
                     {{/if}}
                 </div>
-                <h2 class="post-card-title">
-                    {{#unless access}}
-                    {{^has visibility="public"}}
-                        {{#unless feature_image}}
-                            {{> "icons/lock"}}
+                <a href="{{url}}">
+                    <h2 class="post-card-title">
+                        {{#unless access}}
+                        {{^has visibility="public"}}
+                            {{#unless feature_image}}
+                                {{> "icons/lock"}}
+                            {{/unless}}
+                        {{/has}}
                         {{/unless}}
-                    {{/has}}
-                    {{/unless}}
-                    {{title}}
-                </h2>
+                        {{title}}
+                    </h2>
+                </a>
             </header>
             {{#if excerpt}}
                 <div class="post-card-excerpt">{{excerpt}}</div>
