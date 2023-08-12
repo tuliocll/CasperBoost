@@ -1,0 +1,30 @@
+<div class="floating-buttons">
+  <button
+    id="twitter-button"
+    title="Share on Twitter"
+    onclick="copyAndShare('twitter')"
+  >
+    {{> "icons/twitter"}}
+    <span class="tooltip">Share on Twitter</span>
+  </button>
+
+  <button
+    id="linkedin-button"
+    title="Share on LinkedIn"
+    onclick="copyAndShare('linkedin')"
+  >
+    {{> "icons/linkedin"}}
+    <span class="tooltip">Share on Linkedin</span>
+
+  </button>
+
+  <button
+    id="copy-link-button"
+    title="Copy post link"
+    onclick="copyAndShare('copy')"
+  >
+    {{> "icons/copy"}}
+    <span class="tooltip">Copy post link</span>
+
+  </button>
+</div>
