@@ -984,6 +984,8 @@ production stylesheet in assets/built/screen.css
     font-weight: 600;
     letter-spacing: -0.005em;
     line-height: 1;
+    overflow: scroll;
+    white-space: nowrap;
 }
 
 .post-card-tag {
