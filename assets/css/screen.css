@@ -974,7 +974,6 @@ production stylesheet in assets/built/screen.css
 .post-card-tags {
     display: flex;
     align-items: center;
-    gap: 12px;
     margin: 0 0 10px;
     color: var(--color-secondary-text);
     font-size: 1.4rem;
@@ -982,6 +981,14 @@ production stylesheet in assets/built/screen.css
     letter-spacing: -0.005em;
     line-height: 1;
 }
+
+.post-card-tag {
+    margin-right: 12px;
+    color: var(--color-darkmode);
+    background-color: var(--color-lightgrey);
+    padding: 8px 10px;
+    border-radius: 26px;
+  }
 
 .post-card-featured {
     position: relative;
